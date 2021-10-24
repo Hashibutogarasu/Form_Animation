@@ -25,10 +25,10 @@ namespace Twitter
             InitializeComponent();
             Icon = Resources.icon;
 
-            pictureBox1.SetCenter(this);
+            TopIcon.SetCenter(this);
 
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);            
+            this.Controls.Add(this.TopIcon);
+            this.Controls.Add(this.BackGroundPicture);            
 
             string cont = "";
 
@@ -50,16 +50,16 @@ namespace Twitter
         {
             await Task.Delay(5000);
 
-            pictureBox1.Fadeout("icon_42.png");
-            pictureBox2.Fadeout("background.png");
+            TopIcon.Fadeout("icon_42.png");
+            BackGroundPicture.Fadeout("background.png");
         }
 
         private async void Form_Closing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
 
-            pictureBox1.Fadein("icon_42.png");
-            pictureBox2.Fadein("background.png");
+            TopIcon.Fadein("icon_42.png");
+            BackGroundPicture.Fadein("background.png");
 
             await Task.Delay(2000);
 

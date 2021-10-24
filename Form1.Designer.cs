@@ -29,34 +29,34 @@ namespace Twitter
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.TopIcon = new System.Windows.Forms.PictureBox();
+            this.BackGroundPicture = new System.Windows.Forms.PictureBox();
             this.HomeButton = new System.Windows.Forms.Button();
             this.MentionsButton = new System.Windows.Forms.Button();
             this.ProfileButton = new System.Windows.Forms.Button();
             this.SettingsButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TopIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackGroundPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // TopIcon
             // 
-            this.pictureBox1.Image = global::Twitter.Properties.Resources.icon_42;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.TopIcon.Image = global::Twitter.Properties.Resources.icon_42;
+            this.TopIcon.Location = new System.Drawing.Point(0, 0);
+            this.TopIcon.Name = "TopIcon";
+            this.TopIcon.Size = new System.Drawing.Size(42, 42);
+            this.TopIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.TopIcon.TabIndex = 0;
+            this.TopIcon.TabStop = false;
             // 
-            // pictureBox2
+            // BackGroundPicture
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(784, 361);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.BackGroundPicture.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BackGroundPicture.Location = new System.Drawing.Point(0, 0);
+            this.BackGroundPicture.Name = "BackGroundPicture";
+            this.BackGroundPicture.Size = new System.Drawing.Size(784, 361);
+            this.BackGroundPicture.TabIndex = 2;
+            this.BackGroundPicture.TabStop = false;
             // 
             // HomeButton
             // 
@@ -103,21 +103,24 @@ namespace Twitter
             this.Controls.Add(this.ProfileButton);
             this.Controls.Add(this.MentionsButton);
             this.Controls.Add(this.HomeButton);
+            //this.Controls.Add(this.TopIcon);
+            //this.Controls.Add(this.BackGroundPicture);
             this.Name = "Form1";
             this.Text = "Twitter";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TopIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackGroundPicture)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox TopIcon;
+        private System.Windows.Forms.PictureBox BackGroundPicture;
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.Button MentionsButton;
         private System.Windows.Forms.Button ProfileButton;
